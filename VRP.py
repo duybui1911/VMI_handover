@@ -278,8 +278,7 @@ class VRP():
 
 if __name__ == '__main__':
     cfg = utils.configs_input(
-        r'data/distances.xlsx',
-        # r'data/ATM_pickup.csv'
+        r'data/distances.csv',
     )
     items = pd.read_excel(f'data/chiphicohoi.xlsx')
     fin_cost_rate = items['Gia_ban'].values/np.sum(items['Gia_ban'].values)
